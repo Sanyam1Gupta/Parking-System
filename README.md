@@ -10,12 +10,9 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+1.) git clone the repository.
+2.) npm install.
+3.) Run start-local.sh.
 
 ### Contribution guidelines ###
 
