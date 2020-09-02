@@ -1,0 +1,77 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "no-control-regex": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "no-undef": "warn",
+    "no-nested-ternary": "warn",
+    "import/no-cycle": "warn",
+    "camelcase": "warn",
+    "no-console": 1,
+    "no-multi-assign": "warn",
+    "no-unused-vars": ["warn", { "args": "all", "argsIgnorePattern": "^resp" }],
+    "no-shadow": "warn",
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "no-useless-escape": "0",
+    "jsx-a11y/label-has-for": [
+      1,
+      {
+        "components": ["Label"],
+        "required": {
+          "every": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "no-bitwise": ["error", { "allow": ["~"] }],
+    "import/no-extraneous-dependencies": [error, { "devDependencies": true }],
+    "react/jsx-props-no-spreading": 0,
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["draft"] }
+    ]
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true,
+    "global": true,
+    "describe": "readonly",
+    "test": "readonly",
+    "shallow": "readonly",
+    "expect": "readonly"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["configurations", "./src/configurations"],
+          ["utils", "./src/utils"],
+          ["components", "./src/components"],
+          ["globals", "./src/globals"],
+          ["schemas", "./src/schemas"],
+          ["libs", "./src/libs"]
+        ],
+        "extensions": [".js", ".jsx", ".scss", ".react.js"]
+      }
+    }
+  },
+  "parser": "babel-eslint"
+}

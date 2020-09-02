@@ -1,0 +1,52 @@
+@import '../../globals/styles/modules/base/all';
+
+.dialog-title-wrapper {
+  min-height: 0px;
+  border-bottom: 2px solid $primary-border-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dialog-title {
+    color: #ed1164;
+    font-family: Lato;
+    font-size: rem(25, $font-size-xs);
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+}
+
+.dialog-content-wrapper {
+  margin: 25px 0px;
+  .dialog-content-confirmation-text {
+    color: $smoke-color;
+    font-family: Lato;
+    font-size: rem(12, $font-size-xs);
+    letter-spacing: 0;
+    line-height: 15px;
+    text-align: center;
+  }
+}
+
+#dialog-actions {
+  min-height: 0px;
+  border-top: 2px solid $primary-border-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .button-container {
+    flex-wrap: nowrap;
+    button {
+      width: 100%;
+      &:first-child {
+        margin-right: 16px;
+        width: 40%;
+      }
+      &:last-child {
+        width: 60%;
+      }
+    }
+  }
+}

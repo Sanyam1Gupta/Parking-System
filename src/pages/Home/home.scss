@@ -1,0 +1,344 @@
+@import "../../globals/styles/modules/base/all";
+
+// NOTE: mixin for title
+@mixin main-page-card-title {
+  color: $primary-more-dark-color;
+  font-family: Lato;
+  font-size: rem(25, $font-size-xs);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+#calculator-form-container {
+  // NOTE: style for left block (form block)
+  .banner-box-container {
+    margin-top: rem(100, $font-size-xs);
+  }
+  .active-users-outer-layout {
+    padding: 12px 16px 0 16px;
+    .active-users-layout {
+      border: 2px solid $primary-border-color;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: rem(16, $font-size-xs);
+      img {
+        max-width: rem(24, $font-size-xs);
+      }
+      .users-checked-text {
+        color: #696b6f;
+        font-family: Lato;
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 15px;
+      }
+    }
+  }
+  .check-immunity-container {
+    margin-top: rem(50, $font-size-xs);
+    .form-insight-container {
+      box-sizing: content-box;
+
+      &__left-block {
+        width: 40%;
+      }
+      &__right-block {
+        width: 60%;
+      }
+    }
+  }
+  section#basic-form-container {
+    .basic-form-title {
+      @include main-page-card-title;
+      padding: 0px 16px;
+      color: #97144d;
+    }
+
+    #action-block {
+      display: flex;
+      justify-content: space-between;
+      button {
+        width: 100%;
+        height: 56px;
+        &:first-child {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .form-card-container {
+      padding: 16px;
+      box-sizing: border-box;
+      margin-top: 4px;
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      .inner-card-container {
+        padding: 0px;
+        border: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .inner-card {
+          border: 3px solid $primary-border-color;
+          border-radius: 8px;
+          background-color: #fff;
+          box-sizing: border-box;
+          padding: 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .update-block {
+            color: #ed1164;
+            font-family: Lato;
+            font-size: 10px;
+            letter-spacing: 1px;
+            line-height: 12px;
+            text-transform: uppercase;
+          }
+
+          .inner-card-header {
+            color: #323232;
+            font-family: Lato;
+            font-size: 10px;
+            letter-spacing: 1px;
+            line-height: 12px;
+            text-transform: uppercase;
+            padding: 10px 16px;
+            .inner-card-sub-header {
+              font-weight: bold;
+              font-size: 16px;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      .form-card-header {
+        color: $secondary-text-color;
+        font-family: Lato;
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 12px;
+        text-transform: uppercase;
+        padding: 10px 16px;
+      }
+    }
+
+    .existing-savings-card-container {
+      height: rem(162, $font-size-xs);
+      padding: 16px;
+      box-sizing: border-box;
+      margin-top: 4px;
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+
+    // NOTE: action block(container for action buttons)
+    #action-block {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+    #existing-member-block {
+      margin-top: 16px;
+      color: $secondary-text-color;
+      font-family: Lato;
+      font-size: rem(16, $font-size-xs);
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 15px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      .log-in-btn-text {
+        color: #ff0062;
+        font-family: Lato;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        line-height: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // NOTE: style for right block (financial insight block)
+
+  .card-container {
+    border: 3px solid $primary-border-color;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0px;
+    background-color: $body-background-color;
+  }
+  .calculator-form-card-container {
+    border-radius: 8px;
+    background-color: $body-background-color;
+    box-shadow: 0 2px 10px 0 rgba(205, 205, 205, 0.5);
+    padding: 0px;
+  }
+  .validation-text-message {
+    font-size: 15px;
+    color: #a9a9a9;
+    font-family: Lato;
+  }
+  .faq-disclaimer-container {
+    margin-top: rem(40, $font-size-xs);
+  }
+  .accordian-container {
+    background-color: $body-background-color;
+    margin-top: rem(12, $font-size-xs);
+    border-radius: 8px;
+    &:first-child {
+      margin-top: 0;
+    }
+    .accordian-content {
+      padding: 4px;
+    }
+  }
+}
+
+// ******************** MEDIA QUERIES(START) ********************
+
+@media (max-width: 900px) {
+  .form-insight-container {
+    &__left-block {
+      width: 100% !important;
+    }
+    &__right-block {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #calculator-form-container {
+    .active-users-outer-layout {
+      .active-users-layout {
+        img {
+          max-width: rem(36, $font-size-xs);
+        }
+        .users-checked-text {
+          font-size: 16px;
+        }
+      }
+    }
+    .check-immunity-container {
+      margin-top: rem(35, $font-size-xs);
+    }
+    section#basic-form-container {
+      #action-block {
+        margin-left: rem(18, $font-size-xs);
+        margin-right: rem(18, $font-size-xs);
+      }
+    }
+    .validation-text-message {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #calculator-form-container {
+    .active-users-outer-layout {
+      .active-users-layout {
+        img {
+          max-width: rem(36, $font-size-xs);
+        }
+        .users-checked-text {
+          font-size: 16px;
+        }
+      }
+    }
+    .check-immunity-container {
+      margin-top: rem(35, $font-size-xs);
+    }
+    section#basic-form-container {
+      #action-block {
+        margin-left: rem(18, $font-size-xs);
+        margin-right: rem(18, $font-size-xs);
+      }
+    }
+    .validation-text-message {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #calculator-form-container {
+    .active-users-outer-layout {
+      .active-users-layout {
+        img {
+          max-width: rem(30, $font-size-xs);
+        }
+        .users-checked-text {
+          font-size: 14px;
+        }
+      }
+    }
+    .check-immunity-container {
+      margin-top: rem(35, $font-size-xs);
+    }
+    section#basic-form-container {
+      #action-block {
+        margin-left: rem(18, $font-size-xs);
+        margin-right: rem(18, $font-size-xs);
+      }
+    }
+    .validation-text-message {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #calculator-form-container {
+    .active-users-outer-layout {
+      .active-users-layout {
+        img {
+          max-width: rem(28, $font-size-xs);
+        }
+        .users-checked-text {
+          font-size: 13px;
+        }
+      }
+    }
+    .check-immunity-container {
+      margin-top: rem(35, $font-size-xs);
+    }
+    section#basic-form-container {
+      #action-block {
+        margin-left: rem(18, $font-size-xs);
+        margin-right: rem(18, $font-size-xs);
+      }
+    }
+    .validation-text-message {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #calculator-form-container {
+    .check-immunity-container {
+      margin-top: rem(35, $font-size-xs);
+    }
+    section#basic-form-container {
+      #action-block {
+        margin-left: rem(16, $font-size-xs);
+        margin-right: rem(16, $font-size-xs);
+      }
+    }
+    .validation-text-message {
+      font-size: 10px;
+    }
+  }
+}
+
+// ******************** MEDIA QUERIES(END) ********************

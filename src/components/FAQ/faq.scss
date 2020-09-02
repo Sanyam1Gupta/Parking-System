@@ -1,0 +1,27 @@
+@import '../../globals/styles/modules/base/all';
+
+.faq-heading {
+  color: #323232;
+  font-family: Lato;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.faq-question-answer-container {
+  margin: 16px 0px;
+  &__question {
+  }
+  &__answer {
+    margin-top: 4px;
+  }
+}
+.faq-answer-container {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 15px;
+  font-size: rem(16, $font-size-xs);
+  font-weight: 300;
+  font-family: Lato;
+}

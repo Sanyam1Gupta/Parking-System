@@ -1,0 +1,33 @@
+@import './globals/styles/modules/base/normalize';
+@import './globals/styles/modules/base/all';
+
+body {
+  height: 100vh;
+  font-family: Lato, Roboto;
+  &.offline {
+    transition: 0.3s all ease-in-out;
+    moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    filter: grayscale(100%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track:hover {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #708090;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

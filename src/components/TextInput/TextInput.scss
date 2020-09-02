@@ -1,0 +1,8 @@
+@import "../../globals/styles/modules/base/all";
+.text-input__layout {
+  padding-top: rem(8, $font-size-xs);
+  padding-bottom: rem(8, $font-size-xs);
+  .text-input__input {
+    padding-right: 0px;
+  }
+}

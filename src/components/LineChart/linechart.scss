@@ -1,0 +1,58 @@
+@import '../../globals/styles/modules/base/all';
+
+.highcharts-wrapper-layout {
+  overflow: visible !important;
+  div:first-child {
+    overflow: visible !important;
+  }
+  .highcharts-container {
+    overflow: visible !important;
+    .highcharts-label:last-child {
+      span {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.highcharts-root {
+  overflow: visible !important;
+}
+
+#shield-above-bar-img {
+  max-height: 30px;
+  padding-top: 10px;
+  padding-left: 02px;
+}
+.label-text {
+  color: #696b6f;
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 15px;
+  padding-top: 2px;
+}
+
+.highcharts-tooltip {
+  opacity: 1;
+  z-index: 9999 !important;
+}
+
+// ******************** MEDIA QUERIES(START) ********************
+
+@media (max-width: 700px) {
+  .highcharts-wrapper-layout {
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .highcharts-wrapper-layout {
+    padding: 20px 0;
+  }
+}
+
+// ******************** MEDIA QUERIES(START) ********************

@@ -1,0 +1,217 @@
+@import "../../globals/styles/modules/base/all";
+
+#banner-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #0f3664;
+  padding: 48px 30px;
+  box-shadow: 0 2px 2px 0 rgba(202, 202, 202, 0.1), 0 0 8px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+
+  .reach-your-money-goa {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: rem(20, $font-size-xs);
+    letter-spacing: 2px;
+    line-height: 24px;
+  }
+  .faster-with-immunity {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: rem(40, $font-size-xs);
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 48px;
+  }
+
+  .banner-right-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: -130px;
+      height: auto;
+    }
+  }
+}
+
+// ******************** MEDIA QUERIES(START) ********************
+
+@media (max-width: 768px) and (min-width: 600px) {
+  #banner-container {
+    padding: 42px 24px;
+    .reach-your-money-goa {
+      font-size: rem(18, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(32, $font-size-xs);
+      padding-top: rem(12, $font-size-xs);
+      line-height: 26px;
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(192, $font-size-xs);
+        min-height: rem(180, $font-size-xs);
+        bottom: -115px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #banner-container {
+    padding: 42px 24px;
+    .reach-your-money-goa {
+      font-size: rem(16, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(28, $font-size-xs);
+      padding-top: rem(12, $font-size-xs);
+      line-height: 26px;
+      max-width: rem(164, $font-size-xs);
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(156, $font-size-xs);
+        min-height: rem(132, $font-size-xs);
+        bottom: -115px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #banner-container {
+    padding: 42px 24px;
+    .reach-your-money-goa {
+      font-size: rem(16, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(28, $font-size-xs);
+      padding-top: rem(12, $font-size-xs);
+      line-height: 26px;
+      max-width: rem(164, $font-size-xs);
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(148, $font-size-xs);
+        min-height: rem(140, $font-size-xs);
+        bottom: -115px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #banner-container {
+    padding: 42px 24px;
+    .reach-your-money-goa {
+      font-size: rem(16, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(28, $font-size-xs);
+      padding-top: rem(12, $font-size-xs);
+      line-height: 26px;
+      max-width: rem(164, $font-size-xs);
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(134, $font-size-xs);
+        min-height: rem(136, $font-size-xs);
+        bottom: -115px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #banner-container {
+    padding: 36px 24px;
+    .reach-your-money-goa {
+      font-size: rem(14, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(26, $font-size-xs);
+      padding-top: rem(10, $font-size-xs);
+      line-height: 26px;
+      max-width: rem(164, $font-size-xs);
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(120, $font-size-xs);
+        min-height: rem(104, $font-size-xs);
+        bottom: -90px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #banner-container {
+    padding: 36px 24px;
+    .reach-your-money-goa {
+      font-size: rem(13, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(26, $font-size-xs);
+      padding-top: rem(8, $font-size-xs);
+      line-height: 26px;
+      max-width: rem(160, $font-size-xs);
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(118, $font-size-xs);
+        min-height: rem(102, $font-size-xs);
+        bottom: -90px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #banner-container {
+    padding: 20px 16px;
+    .reach-your-money-goa {
+      font-size: rem(12, $font-size-xs);
+      letter-spacing: 1.2px;
+      line-height: 15px;
+    }
+    .faster-with-immunity {
+      font-size: rem(24, $font-size-xs);
+      padding-top: rem(6, $font-size-xs);
+      line-height: 23px;
+      max-width: rem(150, $font-size-xs);
+    }
+    .banner-right-section {
+      img {
+        min-width: rem(101, $font-size-xs);
+        min-height: rem(94, $font-size-xs);
+        bottom: -75px;
+        right: 0;
+      }
+    }
+  }
+}
+
+// ******************** MEDIA QUERIES(START) ********************

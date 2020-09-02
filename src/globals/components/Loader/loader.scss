@@ -1,0 +1,15 @@
+@import '../../../globals/styles/modules/base/all';
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba($color: $primary-background-color, $alpha: 0.98);
+  color: $primary-more-dark-color;
+}

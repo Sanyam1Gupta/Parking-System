@@ -1,0 +1,48 @@
+@import "../../../globals/styles/modules/base/all";
+
+.email-layout__header-title {
+  height: rem(12, $font-size-xs);
+  width: rem(198, $font-size-xs);
+  color: $smoke-color;
+  font-family: "Lato", sans-serif;
+  font-size: rem(10, $font-size-xs);
+  letter-spacing: rem(1, $font-size-xs);
+  line-height: rem(12, $font-size-xs);
+  text-transform: uppercase;
+}
+.email-layout__header-subtitle {
+  height: rem(30, $font-size-xs);
+  width: rem(168, $font-size-xs);
+  color: $charcoal-color;
+  font-family: "Lato";
+  font-size: rem(25, $font-size-xs);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: rem(30, $font-size-xs);
+}
+.email-layout__body {
+  bottom: 0;
+  border: rem(1, $font-size-xs) solid $white;
+  background-color: $white;
+  padding-top: rem(20, $font-size-xs);
+  border-top-left-radius: rem(16, $font-size-xs);
+  border-top-right-radius: rem(16, $font-size-xs);
+  .email-textfields {
+    justify-content: center;
+    .email-space-bw-textfields {
+      padding-top: rem(5, $font-size-xs);
+    }
+  }
+  .cancel__button {
+    font-family: "Lato", sans-serif;
+    font-size: rem(14, $font-size-xs);
+    font-weight: bold;
+    color: #97144d;
+  }
+  .done__button {
+    font-family: "Lato", sans-serif;
+    font-size: rem(16, $font-size-xs);
+    font-weight: bold;
+    color: $white;
+  }
+}

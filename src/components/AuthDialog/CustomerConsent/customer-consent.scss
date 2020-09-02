@@ -1,0 +1,32 @@
+@import "../../../globals/styles/modules/base/all";
+
+.customer-consent-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 30px;
+    .consent-awaited-text {
+        color: #323232;
+        font-family: Lato;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 30px;
+        text-align: center;
+    }
+    .sms-sent-text {
+        color: #696b6f;
+        font-family: Lato;
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 12px;
+        text-align: center;
+    }
+    .cancel__button {
+        font-family: "Lato", sans-serif;
+        font-size: rem(14, $font-size-xs);
+        font-weight: bold;
+        color: #97144d;
+    }
+}

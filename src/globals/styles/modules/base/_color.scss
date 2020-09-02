@@ -1,0 +1,70 @@
+$body-background-color: #f9f9f9;
+
+/** 
+    main theme colors used widely throughout application
+*/
+$primary-color: #97144d;
+$secondary-color: #005a4b;
+$accent-color: #ed1164;
+$primary-bright-color: #ed1164;
+
+/** 
+    colors for background color and border
+*/
+
+$primary-background-color: #fefefe;
+$secondary-background-color: #f9fcff;
+$tertiary-background-color: #f9fcff;
+
+$primary-border-color: #f9f9f9;
+$secondary-border-color: #f9fcff;
+
+/** 
+    colors for content/body text
+*/
+$primary-text-color: #000000;
+$primary-light-text-color: #bababa;
+$primary-dark-color: #505050;
+$primary-more-dark-color: #323232;
+$secondary-text-color: #696b6f;
+$secondary-light-text-color: #f9f9f9;
+$tertiary-text-color: #bebfc0;
+$tertiary-dark-text-color: #989898;
+$arrow-text-color: #989898;
+
+/** 
+    colors for title and sub titles
+*/
+$primary-title-color: #ed1164;
+$primary-subtitle-color: #bababa;
+$secondary-title-color: #696b6f;
+
+/** 
+    colors for all warning, alert, success, info status
+*/
+$success-color: #ff0000;
+$error-color: #ff0000;
+$warning-color: #ff0000;
+$info-color: #ff0000;
+
+/** 
+    colors for otp
+*/
+$approx-alice-blue: #f9fcff;
+$approx-pattens-blue: #d1e8ff;
+$white: #ffffff;
+$smoke-color: #696b6f;
+$charcoal-color: #323232;
+$cloud-color: #f9f9f9;
+
+/** 
+    the :export directive is the magic sauce for webpack
+    this allows us to use this scss variable inside any JS file simply by importing the file
+*/
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  primaryBrightColor: $primary-bright-color;
+  accentColor: $accent-color;
+  primaryBackgroundColor: $primary-background-color;
+}

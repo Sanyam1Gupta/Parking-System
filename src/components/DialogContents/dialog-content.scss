@@ -1,0 +1,13 @@
+.detailed-forms-dialog {
+    .MuiDialog-paperWidthMd {
+    }
+}
+
+@media (min-width: 900px) {
+    .detailed-forms-dialog {
+        .MuiDialog-paperWidthMd {
+            max-width: 640px !important;
+            overflow: hidden !important;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../globals/styles/modules/base/all';
+
+.authentication-screen-footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: $body-background-color;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(12, $font-size-xs);
+  .customer-id-btn-text {
+    color: $accent-color;
+    text-align: center;
+  }
+  .go-back-btn-text {
+    color: $accent-color;
+    font-family: Lato;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .authentication-screen-footer {
+    position: fixed;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 360px) {
+  .authentication-screen-footer {
+    font-size: rem(10, $font-size-xs);
+  }
+}

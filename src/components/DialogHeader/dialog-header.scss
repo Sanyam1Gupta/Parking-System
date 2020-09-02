@@ -1,0 +1,21 @@
+@import '../../globals/styles/modules/base/all';
+
+.dialog-header-container {
+  &__title {
+    color: $smoke-color;
+    font-family: 'Lato', sans-serif;
+    font-size: rem(10, $font-size-xs);
+    letter-spacing: rem(1, $font-size-xs);
+    line-height: rem(12, $font-size-xs);
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: $charcoal-color;
+    font-family: 'Lato';
+    font-size: rem(25, $font-size-xs);
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: rem(30, $font-size-xs);
+    margin-top: 4px;
+  }
+}
